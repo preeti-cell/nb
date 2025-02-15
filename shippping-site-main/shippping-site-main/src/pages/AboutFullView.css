@@ -1,0 +1,145 @@
+/* About Full View Page Styles */
+.wrapper-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-bar {
+    background: #1273eb;
+    padding: 4px 0px;
+}
+
+.full-title {
+    background: url('https://www.aeroshipgroup.com/images/about-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+.full-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.full-title h1 {
+    position: relative;
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.breadcrumb-main {
+    position: relative;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    color: #ffffff;
+}
+
+.breadcrumb-item a {
+    color: #1273eb;
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #ffffff;
+}
+
+.about-inner {
+    padding: 70px 0;
+}
+
+.left-ab {
+    padding-right: 30px;
+}
+
+.left-ab h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.left-ab p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.left-ab ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.left-ab ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.left-ab ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1273eb;
+}
+
+.right-ab img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .left-ab {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .full-title {
+        padding: 60px 0;
+    }
+    
+    .full-title h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-inner {
+        padding: 40px 0;
+    }
+    
+    .full-title {
+        padding: 40px 0;
+    }
+    
+    .full-title h1 {
+        font-size: 28px;
+    }
+    
+    .left-ab h3 {
+        font-size: 24px;
+    }
+} 

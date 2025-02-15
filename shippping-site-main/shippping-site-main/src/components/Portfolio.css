@@ -1,0 +1,149 @@
+.container {
+    padding-top: 20px;
+}
+
+.portfolio-main {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.portfolio-main h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-main h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.portfolio-main p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-menu {
+    margin-bottom: 30px;
+}
+
+.project-menu .btn {
+    margin: 5px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-menu .btn.active, .project-menu .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensure no white space appears below the image */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: transform 0.5s ease-in-out; /* Ease in/out effect for the image */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-img:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    flex-direction: column;
+}
+
+.card-img:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay i {
+    color: #fff;
+    font-size: 2rem;
+}
+.col-lg-3.col-md-6.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text inside the elements */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 15px;
+    }
+    
+    .portfolio-main {
+        padding: 15px 0 30px;
+    }
+
+    .portfolio-main h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-main p {
+        font-size: 1rem;
+    }
+
+    .project-menu .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}

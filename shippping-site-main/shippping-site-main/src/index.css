@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global content wrapper with increased padding */
+.content-wrapper {
+    padding-left: 120px !important;
+    padding-right: 120px !important;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Section spacing */
+.section-spacing {
+    padding: 60px 0; /* Reduced from 80px */
+}
+
+/* Responsive padding */
+@media (max-width: 1400px) {
+    .content-wrapper {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content-wrapper {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    
+    .section-spacing {
+        padding: 40px 0;
+    }
+}
+
+/* Fix row margins */
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Adjust spacing between sections */
+.services-bar {
+    margin-top: -20px; /* Reduce space from top */
+    margin-bottom: -20px; /* Reduce space from bottom */
+}
+
+/* Container max-width override */
+.container,
+.container-fluid {
+    max-width: 100% !important;
+}
+
+/* Content sections common styles */
+.content-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure proper spacing for nested content */
+.content-section .content-wrapper {
+    position: relative;
+    z-index: 1;
+}

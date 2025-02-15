@@ -1,0 +1,180 @@
+.why-choose-wrapper {
+    position: relative;
+}
+
+/* Page Title Styles */
+.page-title {
+    background: url('https://www.aeroshipgroup.com/images/why-choose-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.page-title h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.breadcrumb-wrapper {
+    position: relative;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb-item {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.breadcrumb-item a {
+    color: #1273eb;
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #ffffff;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.feature-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: #1273eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover .feature-icon {
+    background: #0d5bba;
+    transform: rotateY(180deg);
+}
+
+.feature-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.feature-box p {
+    font-size: 15px;
+    color: #666666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: #1273eb;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.cta-section .btn-secondary {
+    background: #ffffff;
+    color: #1273eb;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-secondary:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .page-title {
+        padding: 70px 0;
+    }
+    
+    .page-title h1 {
+        font-size: 36px;
+    }
+    
+    .features-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        padding: 50px 0;
+    }
+    
+    .page-title h1 {
+        font-size: 30px;
+    }
+    
+    .feature-box {
+        padding: 25px;
+    }
+    
+    .cta-section {
+        text-align: center;
+    }
+    
+    .cta-section .text-end {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    
+    .cta-section p {
+        font-size: 16px;
+    }
+} 
